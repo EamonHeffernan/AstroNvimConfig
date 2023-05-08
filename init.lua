@@ -82,6 +82,7 @@ return {
     --   },
     -- }
     vim.opt.mouse = "";
+    vim.opt.clipboard = "";
 
     require('neo-tree').setup {
       filesystem = {
