@@ -19,6 +19,4 @@ return {
       })
     end
   },
-  { "chrisgrieser/nvim-spider", lazy = true },
-  { "Pocco81/auto-save.nvim",   lazy = false },
 }
