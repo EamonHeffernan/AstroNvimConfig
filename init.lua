@@ -91,7 +91,8 @@ return {
           hide_dotfiles = false,
           hide_gitignored = true,
         },
-      }
+        follow_current_file = true
+      },
     }
 
     -- vim.cmd("tnoremap <Esc> <C-\\><C-n>")
@@ -115,5 +116,7 @@ return {
 
     vim.keymap.set({ 'n', 'v' }, 'n', 'nzz')
     vim.keymap.set({ 'n', 'v' }, 'N', 'Nzz')
+
+    vim.keymap.set({ 'n', 'v' }, 'gh', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
   end,
 }
