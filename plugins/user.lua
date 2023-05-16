@@ -18,5 +18,23 @@ return {
         -- Configuration here, or leave empty to use defaults
       })
     end
+  },
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({
+        suggestion = {
+          auto_trigger = true,
+          keymap = {
+            accept = "<C-f>",
+            dismiss = "<C-d>",
+            next = "<C-j>",
+            prev = "<C-k>",
+          }
+        }
+      })
+    end
   }
 }
