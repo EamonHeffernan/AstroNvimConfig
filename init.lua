@@ -118,5 +118,8 @@ return {
     vim.keymap.set({ 'n', 'v' }, 'N', 'Nzz')
 
     vim.keymap.set({ 'n', 'v' }, 'gh', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
+
+    vim.opt.spelllang = 'en_us'
+    vim.opt.spell = true
   end,
 }

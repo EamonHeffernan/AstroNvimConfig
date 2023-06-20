@@ -36,5 +36,9 @@ return {
         }
       })
     end
+  },
+  {
+    "alvan/vim-closetag",
+    lazy = false,
   }
 }
